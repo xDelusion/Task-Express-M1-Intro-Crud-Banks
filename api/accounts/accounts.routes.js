@@ -4,7 +4,7 @@ const router = express.Router();
 let accounts = require("../../accounts");
 const methods = require("./accounts.controllers");
 
-router.get("/", accountGet);
+router.get("/", methods.accountGet);
 
 router.post("/", accountCreate);
 
